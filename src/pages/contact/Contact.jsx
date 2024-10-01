@@ -195,8 +195,8 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            disabled={!isFormValid}
-            className={`bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors ${!isFormValid ? "opacity-50 cursor-not-allowed" : ""
+            // disabled={!isFormValid}
+            className={`bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 my-2 px-6 rounded-lg transition-colors
               }`}
           >
             Submit
@@ -211,7 +211,7 @@ const Contact = () => {
 
       {/* Right Side: Google Map and Contact Details */}
       <div className="w-full md:w-1/2 px-6 md:px-12 flex flex-col items-center animate-fade-in-up">
-        <div className="mb-6 relative">
+        <div className="m-6 relative">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.279332692654!2d-122.41941858468033!3d37.77492967975959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c5d7e839b%3A0x406c39d68b86d0!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1634567890123!5m2!1sen!2sus"
             width="100%"
