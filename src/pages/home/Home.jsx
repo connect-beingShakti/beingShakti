@@ -42,9 +42,8 @@ const Home = () => {
   const [slides, setSlides] = useState(slide);
 const [isMobileView, setMobileView] = useState(false);
   useEffect(() => {
-    console.log("----", window.navigator.userAgentData.mobile)
-    setMobileView(window.navigator.userAgentData.mobile);
-    window.navigator.userAgentData.mobile && setSlides([
+    setMobileView(window?.navigator?.userAgentData?.mobile);
+    window?.navigator?.userAgentData?.mobile && setSlides([
       {
         type: 'video',
         videoSrc: videoMain,

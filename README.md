@@ -10,3 +10,7 @@ npm run build
 5. git config --global user.email "you @ example.com"
 6. git config --global user.name "Your Name"
 7. git push --set-upstream github master
+
+# Deployment - 
+1. npm run build
+2. npm run deploy

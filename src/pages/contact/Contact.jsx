@@ -207,6 +207,8 @@ const Contact = () => {
             Your message has been sent successfully!
           </p>
         )}
+
+      {/* <iframe aria-label='Contact Us' src='https://forms.zohopublic.in/connectbeingshaktigm1/form/ContactUs/formperma/B2HbGB_wBvQgt8wHPGD_LHRHLS5izxKtj401enrXZF4'></iframe> */}
       </div>
 
       {/* Right Side: Google Map and Contact Details */}
