@@ -19,7 +19,7 @@ const Slides = (props) => {
      <div className="absolute inset-0 bg-black opacity-50"></div>
 
 {/* Slide Content */}
-<div className="relative h-full flex justify-center items-center text-white">
+<div className="relative h-full flex justify-center px-28 items-center text-white">
   {slides[currentSlide].type === 'video' ? (
     <video
       className="absolute inset-0 w-full h-full object-cover"
