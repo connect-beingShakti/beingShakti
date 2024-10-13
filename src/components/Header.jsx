@@ -52,7 +52,7 @@ function Header() {
           <button
             onClick={toggleMenu}
             className="md:hidden focus:outline-none focus:ring-2 focus:ring-blue-700"
-            aria-label="Toggle Menu"
+            aria-label="Menu"
           >
             <svg
               className="w-6 h-6"

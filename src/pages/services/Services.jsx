@@ -55,70 +55,36 @@ const Services = () => {
   };
   return (
     <>
-      <section
-        id="services"
-        className="relative bg-fixed bg-cover bg-black bg-center h-screen"
-      >
-        <div className="relative h-full bg-white flex justify-center items-center text-white">
-          <div className="container m-12">
-            <div className="text-slate-950">
-              <h3 className="text-xl md:text-2xl font-medium text-center mb-4 animate-fade-in-up">
-                Transformative practices
-              </h3>
 
-              <h2 className="text-3xl md:text-5xl font-bold text-center mb-10 animate-fade-in-up">
-                Guidance for every soul
-              </h2>
-            </div>
-            <div className="absolute w-full h-full bg-slate-950 left-0 top-1/2"></div>
-            {/* Carousel with items */}
-            <div className="relative flex items-center">
-              {/* Left Button */}
-              <button
-                onClick={() => handleScroll("left")}
-                className="absolute left-0 z-10 bg-gray-900 hover:bg-gray-700 text-white p-3 rounded-full"
-              >
-                ◀
-              </button>
-
+      <section id="services" className="bg-gray-50 py-10">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
+          <div className="text-slate-950">
+            <h2 className="text-3xl md:text-5xl font-bold text-center mb-10 animate-fade-in-up">
+              Guidance for every soul
+            </h2>
+          </div>
+          <div
+            className="flex overflow-x-auto snap-x snap-mandatory space-x-4 touch-pan-x"
+            role="list"
+            aria-label="Services list"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }} // For Firefox and Internet Explorer
+          >
+            {items.map((service, index) => (
               <div
-                id="carousel"
-                className="flex space-x-4 scrollbar-hide p-4 animate-fade-in-up snap-x snap-mandatory overflow-hidden"
+                key={index}
+                className="snap-center mb-5 bg-white p-6 rounded-lg shadow-lg w-64 flex-none"
+                role="listitem"
               >
-                {items.map((item, index) => (
-                  <div
-                    key={index}
-                    className="min-w-[300px] max-w-[300px] bg-white text-black p-4 rounded-lg shadow-md transition-transform hover:scale-105 snap-center"
-                  >
-                    <img
-                      src={item.img}
-                      alt={`Service ${index + 1}`}
-                      className="h-40 w-full object-cover rounded-lg mb-4"
-                    />
-                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                    <p className="text-base">{item.description}</p>
-                  </div>
-                ))}
+                <img
+                  src={service.img}
+                  alt={`${service.title} image`}
+                  className="w-full h-40 object-cover rounded-t-lg"
+                />
+                <h3 className="text-lg font-bold mt-4">{service.title}</h3>
+                <p className="mt-2 text-gray-600">{service.description}</p>
               </div>
-
-              {/* Right Button */}
-              <button
-                onClick={() => handleScroll("right")}
-                className="absolute right-0 z-10 bg-gray-900 hover:bg-gray-700 text-white p-3 rounded-full"
-              >
-                ▶
-              </button>
-            </div>
-
-            {/* Range Slider */}
-            <input
-              type="range"
-              min="0"
-              max="100"
-              value={scrollPosition}
-              onChange={handleRangeChange}
-              className="mt-6 w-11/12 bg-gray-200 h-2 rounded-lg appearance-none cursor-pointer relative"
-            />
+            ))}
           </div>
         </div>
       </section>
