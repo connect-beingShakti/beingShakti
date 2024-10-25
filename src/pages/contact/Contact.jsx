@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from 'axios';
+// import img from "../../assets/img.jpg";
 
 const Contact = () => {
   // State for form fields
@@ -58,9 +59,7 @@ const Contact = () => {
   const sendEmail = async ()=>{
     try{
       const resp = await axios.post("https://api.emailjs.com/api/v1.0/email/send", templetParams);
-      console.log("resp>>>>", resp);
     }catch(e){
-      console.log("e", e)
     }
   }
 
@@ -214,25 +213,18 @@ const Contact = () => {
       {/* Right Side: Google Map and Contact Details */}
       <div className="w-full md:w-1/2 px-6 md:px-12 flex flex-col items-center animate-fade-in-up">
         <div className="m-6 relative">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.279332692654!2d-122.41941858468033!3d37.77492967975959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c5d7e839b%3A0x406c39d68b86d0!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1634567890123!5m2!1sen!2sus"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
         </div>
         <div className="">
           <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
-          <p className="text-gray-700 mb-2">Email: info@beingshakti.com</p>
-          <p className="text-gray-700 mb-2">
+          {/* <img src={img} alt="" /> */}
+          <p className="text-gray-700 mb-2">Email: connect.beingshakti@gmail.com</p>
+          {/* <p className="text-gray-700 mb-2">
             Location: 123 Spiritual Lane, Peace City
-          </p>
-          <p className="text-gray-700 mb-2">Open Hours:</p>
+          </p> */}
+          {/* <p className="text-gray-700 mb-2">Open Hours:</p>
           <p className="text-gray-700">Monday - Friday: 9:00 AM - 6:00 PM</p>
           <p className="text-gray-700">Saturday: 10:00 AM - 4:00 PM</p>
-          <p className="text-gray-700">Sunday: Closed</p>
+          <p className="text-gray-700">Sunday: Closed</p> */}
         </div>
       </div>
     </section>

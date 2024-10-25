@@ -7,6 +7,7 @@ import slideImg2 from "../../assets/background3.jpg";
 import { useEffect, useState } from 'react';
 import 'tailwindcss/tailwind.css';
 import Slides from "../../components/Slide";
+import mobiImg3 from "../../assets/img3.png";
 
 const Home = () => {
   const slide = [
@@ -45,7 +46,7 @@ const Home = () => {
   const [endX, setEndX] = useState(0);
   
   useEffect(() => {
-    window?.navigator?.userAgentData?.mobile && setSlides([
+    window.innerWidth <= 768 && setSlides([
       {
         type: 'video',
         videoSrc: videoMain,
@@ -55,13 +56,13 @@ const Home = () => {
       },
       {
         type: 'image',
-        bgImage: slideImg2,
-        title: 'Embrace Your Divine Energy',
-        description: 'Connect with the universal flow of energy that exists within and around you. By recognizing your divine essence, you can achieve true harmony and peace.',
+        bgImage: mobiImg3,
+        title: '',
+        description: '',
       },
       {
         type: 'image',
-        bgImage: slideImg,
+        bgImage: slideImg2,
         title: 'Unlock the Power Within',
         description: 'Discover the immense potential that lies within you. Through self-awareness and mindful practices, tap into your inner strength to lead a more empowered life.',
       },

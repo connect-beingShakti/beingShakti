@@ -58,14 +58,17 @@ const Services = () => {
 
       <section id="services" className="bg-gray-50 py-10">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
           <div className="text-slate-950">
+            <h3 className="text-xl md:text-2xl font-medium text-center mb-4 animate-fade-in-up">
+              Transformative practices
+            </h3>
+
             <h2 className="text-3xl md:text-5xl font-bold text-center mb-10 animate-fade-in-up">
               Guidance for every soul
             </h2>
           </div>
           <div
-            className="flex overflow-x-auto snap-x snap-mandatory space-x-4 touch-pan-x"
+            className="flex overflow-x-auto snap-mandatory space-x-4"
             role="list"
             aria-label="Services list"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }} // For Firefox and Internet Explorer
@@ -73,7 +76,7 @@ const Services = () => {
             {items.map((service, index) => (
               <div
                 key={index}
-                className="snap-center mb-5 bg-white p-6 rounded-lg shadow-lg w-64 flex-none"
+                className="snap-center bg-white p-6 rounded-lg shadow-lg w-64 flex-none"
                 role="listitem"
               >
                 <img
@@ -82,6 +85,7 @@ const Services = () => {
                   className="w-full h-40 object-cover rounded-t-lg"
                 />
                 <h3 className="text-lg font-bold mt-4">{service.title}</h3>
+                <p className="mt-2 text-gray-600">{service.title}</p>
                 <p className="mt-2 text-gray-600">{service.description}</p>
               </div>
             ))}

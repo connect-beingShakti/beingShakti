@@ -4,7 +4,7 @@ const Slides = (props) => {
       useEffect(() => {
         const interval = setInterval(() => {
           setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-        }, 5000); // Change slides every 5 seconds
+        }, 7000); // Change slides every 5 seconds
     
         return () => clearInterval(interval);
       }, [slides.length]);
