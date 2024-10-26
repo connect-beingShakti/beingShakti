@@ -16,7 +16,7 @@ const Slides = (props) => {
 
     return<>
      {/* Overlay */}
-     <div className="absolute inset-0 bg-black opacity-50"></div>
+     <div className="absolute inset-0 bg-black opacity-20"></div>
 
 {/* Slide Content */}
 <div className="relative h-full flex justify-center items-center text-white">

@@ -1,13 +1,16 @@
 import "./Home.css";
 // import backgroundImage from "../../assets/img.jpg";
-import videoMain from "../../assets/video3.mp4";
-import video1 from "../../assets/video1.mp4";
+// import videoMain from "../../assets/video3.mp4";
+import video1 from "../../assets/footerVid.mp4";
+import vid from "../../assets/vid.mp4";
+import videoMain from "../../assets/videoMain.mp4";
 import slideImg from "../../assets/1.jpeg";
 import slideImg2 from "../../assets/background3.jpg";
 import { useEffect, useState } from 'react';
 import 'tailwindcss/tailwind.css';
 import Slides from "../../components/Slide";
 import mobiImg3 from "../../assets/img3.png";
+import imgNew from "../../assets/imgNew.jpg";
 
 const Home = () => {
   const slide = [
@@ -20,7 +23,7 @@ const Home = () => {
     },
     {
       type: 'image',
-      bgImage: slideImg2,
+      bgImage: imgNew,
       title: 'Embrace Your Divine Energy',
       description: 'Connect with the universal flow of energy that exists within and around you. By recognizing your divine essence, you can achieve true harmony and peace.',
     },
@@ -31,10 +34,11 @@ const Home = () => {
       description: 'Discover the immense potential that lies within you. Through self-awareness and mindful practices, tap into your inner strength to lead a more empowered life.',
     },
     {
-      type: 'image',
-      bgImage: slideImg,
+      type: 'video',
+      videoSrc: vid,
       title: 'Align with the Universes Rhythm',
-      description: 'Find balance by aligning your energy with the natural rhythm of the universe. When you move in harmony with the cosmos, you experience more ease and flow in your life.',
+      subtitle: 'Find balance by aligning your energy with the natural rhythm of the universe. When you move in harmony with the cosmos, you experience more ease and flow in your life.',
+      text: 'Discover peace, balance, and your true self',
     },
     // Add more slides as needed
   ];
