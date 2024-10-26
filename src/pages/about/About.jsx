@@ -5,18 +5,18 @@ import "./About.css";
 const About = () => {
   return (
     <>
-      <section className="flex flex-col md:flex-row items-center justify-between px-6 py-12 md:py-24 #ffedd5">
+      <section id="about" className="flex flex-col md:flex-row items-center justify-between px-6 py-6 md:py-12 #ffedd5">
         {/* Left Section with Title, Subtitle, and Description */}
         <div className="w-full md:w-1/2 p-6 relative">
           {/* Description Text with Background Image */}
           <div className="relative">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-gray-800">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-slate-950">
               Discover your inner self
             </h2>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-slate-950">
               Embark on a spiritual journey
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-gray-700">
+            <p className="text-lg md:text-xl mb-8 text-slate-950">
               Join us in exploring the depths of your spirit. Our services are
               designed to help you find balance, peace, and fulfillment. Being
               Shakti offers a unique platform in Patna for those eager to delve
@@ -34,24 +34,24 @@ const About = () => {
               aria-label="background description img"
             >
             </div>
-            <ui className="text-lg md:text-xl mb-8 text-gray-700">
-              <li>
+            <ui className="text-lg md:text-xl mb-8 text-slate-950">
+              <p className="m-2">
                 Blessed to learn spiritual science like
 
-              </li>
-              <li>
+              </p>
+              <p className="m-2">
                 Kriya Kundalini Yoga.
 
-              </li>
-              <li>
+              </p>
+              <p className="m-2">
                 Basic innerwork, advance inner work level 1 and level 2
-              </li>
-              <li>
+              </p>
+              <p className="m-2">
                 Certifide Seven Chakra Healing and Balancing
-              </li>
-              <li>
+              </p>
+              <p className="m-2">
                 Certifide specilalist in Life  / Twinflames Coaching Master Reiki Healer upto level 4 Sanjeevani Healing level 1
-              </li>
+              </p>
             </ui>
 
           </div>
@@ -66,7 +66,27 @@ const About = () => {
         </div>
 
         {/* Right Section with Image */}
-        <div className="w-full md:w-1/2 flex justify-center items-center px-6 md:px-12">
+        <div className="w-full md:w-1/2  px-6 md:px-12 text-slate-950">
+          <h2 className="text-3xl md:text-4xl mb-4">
+            Experiencing twin flame journey and helping people who are in this journey, trying to give direction to the people who are:
+          </h2>
+          <ui className="text-lg md:text-xl mb-8 text-slate-950">
+            <p className="m-2">
+              Facing/ stuck in twin flame journey.
+            </p>
+            <p className="m-2">
+              How to remove blockages or to find out blockages because of which they are not moving forward in their journey.
+            </p>
+            <p className="m-2">
+              To create balanced and conscious life
+            </p>
+            <p className="m-2">
+              Tools to forgive people.
+            </p>
+            <p className="m-2">
+              How to change the perception to see better and happy life
+            </p>
+          </ui>
           <img
             src={aboutImage}
             alt="About"
