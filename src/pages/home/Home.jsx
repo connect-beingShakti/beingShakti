@@ -1,9 +1,9 @@
 import "./Home.css";
 // import backgroundImage from "../../assets/img.jpg";
-// import videoMain from "../../assets/video3.mp4";
+import videoMain from "../../assets/video3.mp4";
 import video1 from "../../assets/footerVid.mp4";
 import vid from "../../assets/vid.mp4";
-import videoMain from "../../assets/videoMain.mp4";
+// import videoMain from "../../assets/videoMain.mp4";
 import slideImg from "../../assets/1.jpeg";
 import slideImg2 from "../../assets/background3.jpg";
 import { useEffect, useState } from 'react';
