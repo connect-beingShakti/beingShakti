@@ -67,8 +67,8 @@ const About = () => {
 
         {/* Right Section with Image */}
         <div className="w-full md:w-1/2  px-6 md:px-12 text-slate-950">
-          <h2 className="text-3xl md:text-4xl mb-4">
-            Experiencing twin flame journey and helping people who are in this journey, trying to give direction to the people who are:
+          <h2 className="text-3xl md:text-4x2 mb-4 font-bold">
+          Experiencing the twin flame journey and helping those who are on this path, offering direction to those who needs:
           </h2>
           <ui className="text-lg md:text-xl mb-8 text-slate-950">
             <p className="m-2">

@@ -8,7 +8,7 @@ const Services = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [items, setItems] = useState([
     {
-      title: "Meditation classes",
+      title: "Chakra Healing and Balance Program",
       description:
         "Discover mindfulness and tranquility through guided meditation sessions.",
       img: services1,
@@ -20,7 +20,7 @@ const Services = () => {
       img: services2,
     },
     {
-      title: "Energy healing",
+      title: "Reiki Healing",
       description:
         "Restore balance and harmony with energy healing techniques.",
       img: services3,
@@ -56,7 +56,7 @@ const Services = () => {
   return (
     <>
 
-      <section id="services" className="bg-gray-50 py-10">
+      <section id="services" className="bg-teal-100 py-10">
         <div className="container mx-auto px-4">
           <div className="text-slate-950">
             <h3 className="text-xl md:text-2xl font-medium text-center mb-4 animate-fade-in-up">
@@ -68,7 +68,7 @@ const Services = () => {
             </h2>
           </div>
           <div
-            className="flex overflow-x-auto snap-mandatory space-x-4"
+            className="flex overflow-x-auto snap-mandatory space-x-4 pb-4"
             role="list"
             aria-label="Services list"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }} // For Firefox and Internet Explorer
@@ -84,7 +84,7 @@ const Services = () => {
                   alt={`${service.title} image`}
                   className="w-full h-40 object-cover rounded-t-lg"
                 />
-                <h3 className="text-lg font-bold mt-4">{service.title}</h3>
+                <p className="text-lg  mt-1">{service.title}</p>
                 <p className="mt-2 text-gray-600">{service.title}</p>
                 <p className="mt-2 text-gray-600">{service.description}</p>
               </div>
