@@ -82,6 +82,17 @@ button:focus-visible {
   -webkit-mask: var(--mask);
           mask: var(--mask);
 }
+
+/* styles.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
 /* .shineContainer{
   background: #000;
 }

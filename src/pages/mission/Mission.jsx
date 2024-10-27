@@ -1,6 +1,6 @@
 const Mission = () => {
     const p = ""
-    return <section id="mission" className="bg-pink-200 text-slate-950 flex flex-col items-center justify-between px-12 py-12 md:py-12">
+    return <section id="mission" className="bg-pink-100 text-slate-950 flex flex-col items-center justify-between px-12 py-12 md:py-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Our Mission at Being Shakti
         </h1>

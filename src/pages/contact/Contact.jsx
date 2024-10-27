@@ -89,6 +89,22 @@ const Contact = () => {
         <h2 className="text-3xl md:text-4xl font-semibold mb-1 text-gray-800">
           Contact Us
         </h2>
+         {/* Decorative Background with Symbols */}
+         <div aria-hidden="true" className="absolute inset-0 flex flex-wrap overflow-hidden opacity-30 text-6xl gap-4 -z-10">
+                {Array.from({ length: 30 }, (_, i) => (
+                    <span
+                        key={i}
+                        className={`random-symbol ${['text-yellow-500', 'text-blue-500', 'text-purple-500', 'text-red-500'][i % 4]} animate-float`}
+                        style={{
+                            position: 'absolute',
+                            top: `${Math.random() * 100}%`,
+                            left: `${Math.random() * 100}%`,
+                        }}
+                    >
+                        {String.fromCharCode(9728 + Math.floor(Math.random() * (9983 - 9728)))}
+                    </span>
+                ))}
+            </div>
         <form onSubmit={handleSubmit} className="w-full max-w-lg">
           <div className="mb-1">
             <label htmlFor="firstName" className="block text-gray-700 mb-2">

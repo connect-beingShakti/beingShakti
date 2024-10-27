@@ -74,7 +74,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="bg-indigo-200 text-slate-950 flex flex-col md:flex-row items-center justify-between px-6 py-6 md:py-12">
+      <section className="bg-indigo-100 text-slate-950 flex flex-col md:flex-row items-center justify-between px-6 py-6 md:py-12">
 
         {/* Right Section with Image */}
         <div className="w-full md:w-1/2  px-6 md:px-12">
