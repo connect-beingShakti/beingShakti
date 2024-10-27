@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
+import Mission from './pages/mission/Mission'
 import Services from './pages/services/Services'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Header/>
       <Home/>
       <About/>
+      <Mission/>
       <Services/>
       <Contact/>
       <Footer/>

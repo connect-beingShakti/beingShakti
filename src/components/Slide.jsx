@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 const Slides = (props) => {
-  const { setCurrentSlide, currentSlide, slides } = props;
+  const { setCurrentSlide, currentSlide, slides, time = 7000 } = props;
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 7000); // Change slides every 5 seconds
+    }, time);
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -22,7 +22,7 @@ const Slides = (props) => {
     <div className="relative h-full flex justify-center items-center text-white">
       {slides[currentSlide].type === 'video' ? (
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover blur-md"
           src={slides[currentSlide].videoSrc}
           autoPlay
           loop

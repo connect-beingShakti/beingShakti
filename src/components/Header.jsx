@@ -29,16 +29,16 @@ function Header() {
               Home
             </a>
             <a
-              href="#services"
-              className="text-gray-800 hover:text-blue-700 font-medium"
-            >
-              Services
-            </a>
-            <a
               href="#about"
               className="text-gray-800 hover:text-blue-700 font-medium"
             >
               About
+            </a>
+            <a
+              href="#services"
+              className="text-gray-800 hover:text-blue-700 font-medium"
+            >
+              Services
             </a>
             <a
               href="#contact"

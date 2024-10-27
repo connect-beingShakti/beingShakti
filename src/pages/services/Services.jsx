@@ -56,9 +56,9 @@ const Services = () => {
   return (
     <>
 
-      <section id="services" className="bg-teal-100 py-10">
+      <section id="services" className="bg-emerald-50 py-10 text-slate-950">
         <div className="container mx-auto px-4">
-          <div className="text-slate-950">
+          <div>
             <h3 className="text-xl md:text-2xl font-medium text-center mb-4 animate-fade-in-up">
               Transformative practices
             </h3>
@@ -68,7 +68,7 @@ const Services = () => {
             </h2>
           </div>
           <div
-            className="flex overflow-x-auto snap-mandatory space-x-4 pb-4"
+            className="flex overflow-x-auto snap-mandatory space-x-4 pb-4 "
             role="list"
             aria-label="Services list"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }} // For Firefox and Internet Explorer
@@ -84,9 +84,8 @@ const Services = () => {
                   alt={`${service.title} image`}
                   className="w-full h-40 object-cover rounded-t-lg"
                 />
-                <p className="text-lg  mt-1">{service.title}</p>
-                <p className="mt-2 text-gray-600">{service.title}</p>
-                <p className="mt-2 text-gray-600">{service.description}</p>
+                <p className="mt-2 font-semibold">{service.title}</p>
+                <p className="mt-2">{service.description}</p>
               </div>
             ))}
           </div>
