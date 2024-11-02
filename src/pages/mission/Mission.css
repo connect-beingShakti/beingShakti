@@ -1,0 +1,4 @@
+.light-yellow-gradient{
+    background: rgb(254,253,246);
+background: linear-gradient(90deg, rgba(254,253,246,1) 0%, rgba(255,246,182,1) 15%, rgba(247,221,243,1) 27%, rgba(207,245,251,1) 54%, rgba(249,181,253,1) 71%, rgba(246,234,138,1) 100%);
+}

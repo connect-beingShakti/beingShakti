@@ -1,3 +1,4 @@
+import "./Mission.css"
 const Mission = () => {
     const p = ""
     return <section id="mission" className="bg-pink-100 text-slate-950 flex flex-col items-center justify-between px-12 py-12 md:py-12">

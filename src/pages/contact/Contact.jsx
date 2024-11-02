@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from 'axios';
-// import img from "../../assets/img.jpg";
-
+import om from "../../assets/OM.svg";
+import "./Contact.css"
 const Contact = () => {
   // State for form fields
   const serviceId = "service_2c8hh1j";
@@ -222,8 +222,6 @@ const Contact = () => {
             Your message has been sent successfully!
           </p>
         )}
-
-      {/* <iframe aria-label='Contact Us' src='https://forms.zohopublic.in/connectbeingshaktigm1/form/ContactUs/formperma/B2HbGB_wBvQgt8wHPGD_LHRHLS5izxKtj401enrXZF4'></iframe> */}
       </div>
 
       {/* Right Side: Google Map and Contact Details */}
@@ -232,7 +230,7 @@ const Contact = () => {
         </div>
         <div className="">
           <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
-          {/* <img src={img} alt="" /> */}
+          <img src={om} className="rotating-image" alt="" />
           <p className="text-gray-700 mb-2">Email: connect.beingshakti@gmail.com</p>
           {/* <p className="text-gray-700 mb-2">
             Location: 123 Spiritual Lane, Peace City

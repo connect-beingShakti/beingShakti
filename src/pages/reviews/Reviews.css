@@ -3,11 +3,11 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(-10px);
+      transform: translateY(-25px);
     }
   }
   
   .animate-float {
-    animation: float 5s ease-in-out infinite;
+    animation: float 10s ease-in-out infinite;
   }
   
